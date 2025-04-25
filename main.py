@@ -72,12 +72,18 @@ def clean_and_analyze_data(bmi_file, info_file):
             plt.tight_layout()
             plt.show()
 
-    # 7. Scatter: Age vs BMI loss
-    sns.regplot(data=df_merged, x='yaş', y='monthly_BMI_loss')
-    plt.title("Age vs Monthly BMI Loss")
-    plt.grid(True)
-    plt.tight_layout()
-    plt.show()
+    # 7. Scatter: Age vs BMI loss for each surgery type
+    surgery_types = df_merged['surgery_type'].unique()
+
+    for surgery in surgery_types:
+        surgery_data = df_merged[df_merged['surgery_type'] == surgery]
+        sns.regplot(data=surgery_data, x='yaş', y='monthly_BMI_loss')
+        plt.title(f"Age vs Monthly BMI Loss for {surgery} Surgery Type")
+        plt.xlabel("Age")
+        plt.ylabel("Monthly BMI Loss")
+        plt.grid(True)
+        plt.tight_layout()
+        plt.show()
 
     # 8. Pearson Correlation with Hypothesis Testing
     df_merged['yaş'] = pd.to_numeric(df_merged['yaş'], errors='coerce')
