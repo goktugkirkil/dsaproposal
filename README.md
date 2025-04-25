@@ -70,7 +70,7 @@ Ekran Resmi 2025-04-25 21.15.06.png
 2. Scatter Plot: Age vs Monthly BMI Loss
 This plot visualizes the relationship between age and monthly BMI loss. The regression line shows a slight downward trend, indicating a weak negative correlation.
 
-
+Ekran Resmi 2025-04-25 21.14.36.png
 
 3. Boxplot: Monthly BMI Loss by Surgery Type
 This boxplot shows the distribution of monthly BMI loss for different surgery types. The data reveals some variations across surgeries, with outliers present in certain types.
