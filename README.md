@@ -67,7 +67,8 @@ Plots
 ### 1. Correlation Matrix:
 The correlation matrix shows a very weak negative correlation between **age** and **monthly BMI loss**.
 
-![Correlation Matrix](Ekran%20Resmi%202025-04-25%2021.14.22.png)
+![Monthly BMI Loss by Surgery Type](Ekran%20Resmi%202025-04-25%2021.15.06.png)
+
 
 ### 2. Scatter Plot: Age vs Monthly BMI Loss
 This plot visualizes the relationship between **age** and **monthly BMI loss**. The regression line shows a slight downward trend, indicating a weak negative correlation.
@@ -77,7 +78,7 @@ This plot visualizes the relationship between **age** and **monthly BMI loss**. 
 ### 3. Boxplot: Monthly BMI Loss by Surgery Type
 This boxplot shows the distribution of **monthly BMI loss** for different **surgery types**. The data reveals some variations across surgeries, with outliers present in certain types.
 
-![Monthly BMI Loss by Surgery Type](Ekran%20Resmi%202025-04-25%2021.15.06.png)
+![Correlation Matrix](Ekran%20Resmi%202025-04-25%2021.14.22.png)
 
 
 
