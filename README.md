@@ -90,5 +90,8 @@ TAKİP 22.01.2025 SPSSE HAZIRLIK (1).csv & ayaybmi.csv: The raw dataset contain
 
 README.md: This file, containing an overview of the analysis and results.
 
+Conclusion
+Based on the tests conducted, we can conclude that age and surgery type do not have a statistically significant impact on monthly BMI loss for the patients in the dataset. Outliers were detected in the BMI variables, and there were no missing values in the key columns.
+
   
   
