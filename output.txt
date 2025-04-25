@@ -1,0 +1,30 @@
+Correlation Matrix:
+                        yaş  monthly_BMI_loss
+yaş               1.000000         -0.128769
+monthly_BMI_loss -0.128769          1.000000
+Pearson r: -0.129, p-value: 0.255
+Hypothesis Testing Result (Pearson): Fail to reject
+
+ANOVA Test Result (Surgery Type and Age): Fail to reject the null hypothesis: No significant effect of surgery type and/or age on monthly BMI loss.
+
+Correlation, Missing Values, and Outlier Table:
+    Correlation Coefficient (r)  p-value (Pearson)  \
+0                    -0.128769           0.254968   
+
+  Hypothesis Test Result (Pearson)  ANOVA p-value (Surgery Type and Age)  \
+0                   Fail to reject                              0.916839   
+
+                      Hypothesis Test Result (ANOVA)  \
+0  Fail to reject the null hypothesis: No signifi...   
+
+   Missing Value (%) - BMI_0  Missing Value (%) - BMI_1  \
+0                        0.0                        0.0   
+
+   Missing Value (%) - BMI_2  Missing Value (%) - Monthly BMI Loss  \
+0                        0.0                                   0.0   
+
+   Outliers - BMI_0  Outliers - BMI_1  Outliers - BMI_2  \
+0               2.5               2.5              8.75   
+
+   Outliers - Monthly BMI Loss  
+0                         8.75  
