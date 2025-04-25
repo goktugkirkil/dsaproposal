@@ -62,20 +62,23 @@ Outliers:
 Outliers were found in the BMI variables, with the highest percentage of outliers in BMI_2 (8.75%) and monthly BMI loss (8.75%).
 
 Plots
-1. Correlation Matrix:
-The correlation matrix shows a very weak negative correlation between age and monthly BMI loss.
+## Results
 
-Ekran Resmi 2025-04-25 21.15.06.png
-
-2. Scatter Plot: Age vs Monthly BMI Loss
-This plot visualizes the relationship between age and monthly BMI loss. The regression line shows a slight downward trend, indicating a weak negative correlation.
-
-Ekran Resmi 2025-04-25 21.14.36.png
-
-3. Boxplot: Monthly BMI Loss by Surgery Type
-This boxplot shows the distribution of monthly BMI loss for different surgery types. The data reveals some variations across surgeries, with outliers present in certain types.
+### 1. Correlation Matrix:
+The correlation matrix shows a very weak negative correlation between **age** and **monthly BMI loss**.
 
 ![Correlation Matrix](Ekran%20Resmi%202025-04-25%2021.14.22.png)
+
+### 2. Scatter Plot: Age vs Monthly BMI Loss
+This plot visualizes the relationship between **age** and **monthly BMI loss**. The regression line shows a slight downward trend, indicating a weak negative correlation.
+
+![Age vs Monthly BMI Loss](Ekran%20Resmi%202025-04-25%2021.14.36.png)
+
+### 3. Boxplot: Monthly BMI Loss by Surgery Type
+This boxplot shows the distribution of **monthly BMI loss** for different **surgery types**. The data reveals some variations across surgeries, with outliers present in certain types.
+
+![Monthly BMI Loss by Surgery Type](Ekran%20Resmi%202025-04-25%2021.15.06.png)
+
 
 
 Files in the Repository
