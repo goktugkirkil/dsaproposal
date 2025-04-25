@@ -73,13 +73,14 @@ The correlation matrix shows a very weak negative correlation between **age** an
 ### 2. Scatter Plot: Age vs Monthly BMI Loss
 This plot visualizes the relationship between **age** and **monthly BMI loss**. The regression line shows a slight downward trend, indicating a weak negative correlation.
 
-![Age vs Monthly BMI Loss](Isg scatterplot.png)
-![Age vs Monthly BMI Loss](LPLLRYGB scatterplot.png)
-![Age vs Monthly BMI Loss](LSG scatterplot.png)
-![Age vs Monthly BMI Loss](oagb scatterplot.png)
-![Age vs Monthly BMI Loss](rRYGB scatterplot.png)
-![Age vs Monthly BMI Loss](rygb scatterplot.png)
-![Age vs Monthly BMI Loss](tb scatterplot.png)
+![Age vs Monthly BMI Loss - Isg](Isg_scatterplot.png)
+![Age vs Monthly BMI Loss - LPLLRYGB](LPLLRYGB_scatterplot.png)
+![Age vs Monthly BMI Loss - LSG](images/LSG_scatterplot.png)
+![Age vs Monthly BMI Loss - oagb](images/oagb_scatterplot.png)
+![Age vs Monthly BMI Loss - rRYGB](images/rRYGB_scatterplot.png)
+![Age vs Monthly BMI Loss - rygb](images/rygb_scatterplot.png)
+![Age vs Monthly BMI Loss - tb](images/tb_scatterplot.png)
+
 
 
 ### 3. Boxplot: Monthly BMI Loss by Surgery Type
