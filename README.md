@@ -75,7 +75,7 @@ Ekran Resmi 2025-04-25 21.14.36.png
 3. Boxplot: Monthly BMI Loss by Surgery Type
 This boxplot shows the distribution of monthly BMI loss for different surgery types. The data reveals some variations across surgeries, with outliers present in certain types.
 
-
+Ekran Resmi 2025-04-25 21.14.22.png
 
 Files in the Repository
 
