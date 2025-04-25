@@ -81,7 +81,7 @@ Files in the Repository
 
 main.py: The Python script that contains the full analysis, including data cleaning, hypothesis testing, and visualization.
 
-data.csv: The raw dataset containing patient information and BMI values.
+TAKİP 22.01.2025 SPSSE HAZIRLIK (1).csv & ayaybmi.csv: The raw dataset containing patient information and BMI values.
 
 README.md: This file, containing an overview of the analysis and results.
 
