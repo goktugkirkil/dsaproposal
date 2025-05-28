@@ -67,7 +67,7 @@ Plots
 ### 1. Correlation Matrix:
 The correlation matrix shows a very weak negative correlation between **age** and **monthly BMI loss**.
 
-![Correlation Matrix](Ekran Resmi 2025-04-25 21.15.06.png)
+![Correlation Matrix]([Ekran Resmi 2025-04-25 21.15.06.png](https://github.com/goktugkirkil/dsaproposal/blob/8a4234c2a1b3d9459d48e3e13037e64f92d0bfa4/Ekran%20Resmi%202025-04-25%2021.15.06.png))
 
 
 ### 2. Scatter Plot: Age vs Monthly BMI Loss
