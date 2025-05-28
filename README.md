@@ -49,7 +49,7 @@ A scatter plot was used to analyze the relationship between age and monthly BMI 
 
 * **Observation:** There's no strong linear relationship between age and BMI loss, but different surgery types showed slightly different patterns.
 
-!\[Bivariate Analysis]\(Age vs BMI.png)
+![Bivariate Analysis](Age vs BMI.png)
 
 ---
 
