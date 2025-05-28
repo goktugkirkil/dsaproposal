@@ -28,3 +28,14 @@ Correlation, Missing Values, and Outlier Table:
 
    Outliers - Monthly BMI Loss  
 0                         8.75  
+
+----------------------------------------------------------------------------------------------
+
+
+--- Yaş Gruplarına Göre İstatistiksel Test ---
+ANOVA Test (Age Groups)
+F-statistic: 1.800104373186812
+p-value: 0.16556549276021912
+No significant difference between age groups (p ≥ 0.05)
+
+
