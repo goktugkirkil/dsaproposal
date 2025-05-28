@@ -1,105 +1,140 @@
-# dsaproposal
-DSA210 project proposal
+# DSA210 Term Project – BMI Prediction Based on Age and Surgery Type
 
-Motivation: Why are you working on this project?
+## Author: Göktuğ Kırkıl – Sabancı University
 
-  I think that medical technology is a work space that we should develop as a country. Right now I am trying to code an AI Agent that analyzes this data and give doctors some hypothesis     with causation and correlation using SPSS methods, so finishing this project is a motivation for me as well.
-  
-Data Source: Where did you get this data? How did you collect it?
+---
 
-  I have found a dataset that consists of 2532 obese people who got into bariatric surgery. This dataset consists of their age, gender, operation type, whether there are extra operations    or not, and their values of insulin and pepdide. The dataset also keeps track of their height § weight after the operation in a time frame. This data was collected by my father who is     a surgeon.
-  
-Data Analysis: Techniques used, different stages of analysis
+## Project Title
 
-  I use ML & SPSS methods. Firstly I use destrciptive analysis -for extraction and summary of the dataset- then I use correlation analysis (Pearson, chi-square, etc.) -to decide to which    hypothesis to write on / whether there is correlation or not- then data visualization which is a form of ML and lastly I use SPSS to identify the dataset and prove mty hypothesis to be    true or false.
-  
-Findings: What are the interesting findings that you found in this project?
+**BMI Prediction Using Age and Surgery Type**
 
-  Looking other people's lives as number is a thing that I find interesting in the first place - however, it is too general - if you want me to be spesific through this project some         people's before and after was quite interesting, like how could an enormous change like that could happen in just 3-4 months.
-  
-Limitations and Future Work: What could be done better? Do you have any future plans on your project?
+---
 
-  As I said I want to continue to this project as making it an AI Agent and working on how to sell that. However, I want to achieve that with the informations I've learned thorough this     lesson. I think that if I've added some diet plans and image estimators (ex. you will look like this in 3 months (with ML) ), and make it publicly available I could've made a system for   the good of both patients and doctors.
+## Motivation
 
-Monthly BMI Loss Analysis and Hypothesis Testing
-This repository contains an analysis of the relationship between age and monthly BMI loss across different surgery types. The analysis includes the following steps:
+Bariatric surgery outcomes can differ widely based on patient characteristics. Understanding how variables like age and surgery type affect Body Mass Index (BMI) change can provide insights into expected outcomes and guide personalized interventions.
 
-Data Preparation:
+---
 
-The dataset contains information about patients who underwent various weight loss surgeries, including their BMI at different stages and clinical variables such as age, hba1c, insulin, and c-peptit.
+## Project Goal
 
-The dataset was cleaned to remove missing values, and BMI changes were calculated between initial and final measurements.
+To analyze how age and surgery type relate to post-operative BMI changes and build predictive models for monthly BMI reduction using multiple machine learning techniques.
 
-Hypothesis Testing:
+---
 
-Null Hypothesis (H₀): Surgery type and age have no effect on the monthly BMI change.
+## Data Sources and Preprocessing
 
-Alternative Hypothesis (H₁): Surgery type and age have a significant effect on the monthly BMI change.
+* **Data Source 1:** `ayaybmi.csv` (BMI values and surgery types)
+* **Data Source 2:** `TAKİP 22.01.2025 SPSSE HAZIRLIK.csv` (Age and clinical values)
+* Variables used: `Age`, `Surgery_Type`, `BMI_0`, `BMI_1`, `BMI_2`, `monthly_BMI_loss`
+* Cleaned dataset: Removed or imputed missing values, converted comma decimals to float, merged datasets on patient index.
 
-Two tests were performed:
+---
 
-Pearson Correlation Test: To check the relationship between age and monthly BMI loss.
+## Exploratory Data Analysis
 
-ANOVA Test: To test whether surgery type and/or age significantly affect the monthly BMI loss.
+### Univariate Analysis
 
-Outlier Detection and Missing Values:
+A series of histograms and KDE plots were used to inspect distributions of numerical variables.
 
-Outliers were detected using the Interquartile Range (IQR) method, and their percentage was calculated for each relevant variable.
+* **Observation:** `monthly_BMI_loss` showed right-skewness; `yaş` (age) displayed a normal-like distribution.
 
-Missing value percentages were also calculated for each variable to assess data quality.
+![Univariate Analysis](Distributions.png)
 
-Results
-Pearson Correlation:
-The Pearson correlation coefficient between age and monthly BMI loss is -0.129, with a p-value of 0.255, indicating no significant relationship between these two variables.
+---
 
-ANOVA Test (Surgery Type and Age):
-The p-value for the ANOVA test is 0.9168, which is greater than 0.05, indicating that surgery type and age do not significantly affect monthly BMI loss.
+### Bivariate Analysis
 
-Missing Values:
-No missing values were found in the relevant columns (BMI_0, BMI_1, BMI_2, monthly_BMI_loss).
+A scatter plot was used to analyze the relationship between age and monthly BMI loss.
 
-Outliers:
-Outliers were found in the BMI variables, with the highest percentage of outliers in BMI_2 (8.75%) and monthly BMI loss (8.75%).
+* **Observation:** There's no strong linear relationship between age and BMI loss, but different surgery types showed slightly different patterns.
 
-Plots
-## Results
+!\[Bivariate Analysis]\(Age vs BMI.png)
 
-### 1. Correlation Matrix:
-The correlation matrix shows a very weak negative correlation between **age** and **monthly BMI loss**.
+---
 
-![Correlation Matrix](correlation%20matrix.png)
+### Multivariate Analysis
 
+A correlation heatmap was generated for all numeric variables.
 
-### 2. Scatter Plot: Age vs Monthly BMI Loss
-This plot visualizes the relationship between **age** and **monthly BMI loss**. The regression line shows a slight downward trend, indicating a weak negative correlation.
+* **Key Finding:** Strongest inverse correlation was between BMI\_2 and monthly\_BMI\_loss, indicating expected weight loss impact. Age had a weak correlation with BMI loss.
 
-![Age vs Monthly BMI Loss - LSG](LSG%20scatterplot.png)
-![Age vs Monthly BMI Loss - LPLLRYGB](LPLLRYGB%20scatterplot.png)
-![Age vs Monthly BMI Loss - LSG](LSG%20scatterplot.png)
-![Age vs Monthly BMI Loss - oagb](oagb%20scatterplot.png)
-![Age vs Monthly BMI Loss - rRYGB](rRYGB%20scatterplot.png)
-![Age vs Monthly BMI Loss - rygb](rygb%20scatterplot.png)
-![Age vs Monthly BMI Loss - tb](tb%20scatterplot.png)
+!\[Correlation Heatmap]\(Correlation Matrix.png)
 
+---
 
+## Machine Learning Models and Performance
 
-### 3. Boxplot: Monthly BMI Loss by Surgery Type
-This boxplot shows the distribution of **monthly BMI loss** for different **surgery types**. The data reveals some variations across surgeries, with outliers present in certain types.
+Three regression models were applied using `age` as the sole feature to predict `monthly_BMI_loss`. The performance metrics evaluated were MAE (Mean Absolute Error), RMSE (Root Mean Squared Error), and R² (coefficient of determination).
 
-![Boxplot](boxplot.png)
+| Model             | MAE    | RMSE   | R²      |
+| ----------------- | ------ | ------ | ------- |
+| Linear Regression | 0.0882 | 0.5405 | 0.0003  |
+| Decision Tree     | 0.1405 | 0.6100 | -0.2737 |
+| Random Forest     | 0.1396 | 0.5951 | -0.2122 |
 
+### Interpretation of Results
 
+* **Linear Regression** performed slightly better than others but still explained very little variance (R² \~ 0.0003).
+* Both **Decision Tree** and **Random Forest** models showed negative R² scores, meaning they performed worse than a horizontal mean predictor.
+* **Conclusion:** The models were unable to effectively learn a predictive function from age alone. Other variables or better feature engineering might be needed.
 
-Files in the Repository
+### Predicted vs Actual Plots
 
-main.py: The Python script that contains the full analysis, including data cleaning, hypothesis testing, and visualization.
+Below are scatter plots comparing actual BMI loss with predicted values for each model. The dashed red line indicates perfect prediction.
 
-TAKİP 22.01.2025 SPSSE HAZIRLIK (1).csv & ayaybmi.csv: The raw dataset containing patient information and BMI values.
+**Linear Regression**
+!\[Linear Regression]\(Linear Regression .png)
 
-README.md: This file, containing an overview of the analysis and results.
+**Decision Tree**
+!\[Decision Tree]\(Decision Tree.png)
 
-Conclusion
-Based on the tests conducted, we can conclude that age and surgery type do not have a statistically significant impact on monthly BMI loss for the patients in the dataset. Outliers were detected in the BMI variables, and there were no missing values in the key columns.
+**Random Forest**
+!\[Random Forest]\(Random Forest.png)
 
-  
-  
+---
+
+## Statistical Testing
+
+To complement ML models, statistical testing was conducted to check whether age groups significantly differ in terms of BMI loss.
+
+### Age Group Analysis (ANOVA)
+
+Patients were grouped by age into three bins:
+
+* Young (0–40)
+* Middle-aged (41–60)
+* Older (61–100)
+
+A one-way ANOVA test was conducted.
+
+* **F-statistic:** 1.80
+* **p-value:** 0.165
+
+**Interpretation:** No significant difference was found between age groups (p > 0.05). This aligns with the poor performance of ML models and supports the conclusion that age alone may not significantly predict monthly BMI loss.
+
+---
+
+## Conclusion
+
+* ML models using only age as a predictor failed to provide reliable predictions.
+* There is no significant statistical difference in BMI loss across age groups.
+* This suggests that BMI change is influenced by more complex interactions or other variables not included in this analysis.
+
+---
+
+## Files in This Repo
+
+* `analysis.ipynb`: EDA, ML, and statistical testing
+* `README.md`: This project summary
+* `data/ayaybmi.csv`: BMI dataset
+* `data/...csv`: Demographic and clinical dataset
+
+---
+
+## Future Work
+
+* Include additional predictors such as initial BMI, clinical indicators, gender, and behavioral factors.
+* Apply feature engineering techniques to improve predictive power.
+* Explore interaction effects between age, surgery type, and other variables.
+
