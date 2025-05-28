@@ -49,7 +49,7 @@ A scatter plot was used to analyze the relationship between age and monthly BMI 
 
 * **Observation:** There's no strong linear relationship between age and BMI loss, but different surgery types showed slightly different patterns.
 
-![Bivariate Analysis](Age vs BMI.png)
+![Age vs Monthly BMI Loss](Age_vs_BMI.png)
 
 ---
 
@@ -59,7 +59,7 @@ A correlation heatmap was generated for all numeric variables.
 
 * **Key Finding:** Strongest inverse correlation was between BMI\_2 and monthly\_BMI\_loss, indicating expected weight loss impact. Age had a weak correlation with BMI loss.
 
-!\[Correlation Heatmap]\(Correlation Matrix.png)
+![Correlation Matrix](Correlation_Matrix.png)
 
 ---
 
@@ -87,7 +87,7 @@ Below are scatter plots comparing actual BMI loss with predicted values for each
 !\[Linear Regression]\(Linear Regression .png)
 
 **Decision Tree**
-!\[Decision Tree]\(Decision Tree.png)
+![Decision Tree Prediction](Decision_Tree.png)
 
 **Random Forest**
 !\[Random Forest]\(Random Forest.png)
