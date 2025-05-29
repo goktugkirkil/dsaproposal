@@ -48,6 +48,14 @@ A series of histograms and KDE plots were used to inspect distributions of numer
 
 * **Observation:** `monthly_BMI_loss` showed right-skewness; `yaş` (age) displayed a normal-like distribution.
 
+* Monthly BMI Loss: Most patients lost around 2.5–4 units of BMI per month, but a few had much higher losses. This right-skewed pattern suggests that while typical outcomes are moderate, some patients respond very strongly to surgery.
+
+* Age: Age followed a near-normal distribution, with most patients between 30 and 60 years old. This aligns with what we’d expect, as bariatric surgery is most common in middle adulthood.
+
+* BMI (Before/After): As expected, BMI decreased from the first to the last measurement. The spikes in the graphs suggest values might have been rounded in the records.
+
+* Clinical Variables (hba1c, insulin, c-peptit): These showed a lot more variation. Some outliers may reflect patients with more complex metabolic issues like diabetes.
+
 ![Univariate Analysis](Distributions.png)
 
 ---
