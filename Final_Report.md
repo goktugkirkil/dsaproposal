@@ -84,7 +84,7 @@ Three regression models were applied using `age` as the sole feature to predict 
 Below are scatter plots comparing actual BMI loss with predicted values for each model. The dashed red line indicates perfect prediction.
 
 **Linear Regression**
-![Linear Regression Prediction](Linear_Regression .png)
+![Linear Regression Prediction](Linear_Regression%20.png)
 
 **Decision Tree**
 ![Decision Tree Prediction](Decision_Tree.png)
