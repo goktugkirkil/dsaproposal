@@ -13,6 +13,8 @@ Data Analysis: Techniques used, different stages of analysis
 
   I use ML & SPSS methods. Firstly I use destrciptive analysis -for extraction and summary of the dataset- then I use correlation analysis (Pearson, chi-square, etc.) -to decide to which    hypothesis to write on / whether there is correlation or not- then data visualization which is a form of ML and lastly I use SPSS to identify the dataset and prove mty hypothesis to be    true or false.
   
+Note: Through the project AI assistants (Chat GPT & Grammarly) are used to complete the tasks that I struggled, I used Chat GPT in .py files, requirements.txt file, and I used Grammarly in Final_Report.md file.
+  
 Findings: What are the interesting findings that you found in this project?
 
   Looking other people's lives as number is a thing that I find interesting in the first place - however, it is too general - if you want me to be spesific through this project some         people's before and after was quite interesting, like how could an enormous change like that could happen in just 3-4 months.
