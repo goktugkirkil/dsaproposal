@@ -175,9 +175,10 @@ Unfortunately, all three ML models performed poorly when using age as the only i
 Statistical analysis supported this result. The ANOVA test comparing age groups showed no significant differences in BMI change across younger, middle-aged, and older patients (p-value > 0.05).
 
 What does this mean?
-Age, on its own, doesn't seem to explain why some patients lose more weight than others after surgery. This implies that other factors —perhaps metabolic data, lifestyle habits, or even psychological factors— play a more important role in BMI outcomes.
+Age, on its own, doesn't seem to explain why some patients lose more weight than others after surgery. This implies that other factors —perhaps metabolic data, lifestyle habits, or even psychological factors— play a more important role in BMI outcomes. 
 
 So while this analysis didn't produce a strong predictive model, it provided a valuable insight: single-variable predictions are not enough for understanding complex medical outcomes like weight loss. 
+
 ---
 
 ## Future Work
