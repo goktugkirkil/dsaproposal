@@ -11,11 +11,9 @@
 ---
 
 Motivation
+
 Every patient’s journey through obesity and bariatric surgery is unique. While the procedures aim to reduce weight and improve quality of life, the degree of success can vary greatly from person to person. What makes one patient lose weight faster than another? Could factors like age or the type of surgery help us predict these differences in weight loss?
-
-Understanding these patterns is not only clinically valuable but also emotionally impactful. For a patient preparing for surgery, knowing what to expect based on others' data can provide reassurance and improve mental readiness. For healthcare professionals, insights from such analysis can inform better, data-driven decisions and enable more personalized care plans.
-
-This project was inspired by a desire to bring clarity to those questions, to turn numbers into insights, and most importantly, to use data to support patients on one of the most challenging journeys of their lives.
+Understanding these patterns is not only clinically valuable but also emotionally impactful. For a patient preparing for surgery, knowing what to expect based on others' data can provide reassurance and improve mental readiness. For healthcare professionals, insights from such analysis can inform better, data-driven decisions and enable more personalized care plans. This project was inspired by a desire to bring clarity to those questions, to turn numbers into insights, and most importantly, to use data to support patients on one of the most challenging journeys of their lives.
 
 ---
 
