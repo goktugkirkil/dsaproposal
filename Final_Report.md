@@ -10,21 +10,22 @@
 
 ---
 
-Motivation
+## Motivation
 
 Every patient’s journey through obesity and bariatric surgery is unique. While the procedures aim to reduce weight and improve quality of life, the degree of success can vary greatly from person to person. What makes one patient lose weight faster than another? Could factors like age or the type of surgery help us predict these differences in weight loss?
 Understanding these patterns is not only clinically valuable but also emotionally impactful. For a patient preparing for surgery, knowing what to expect based on others' data can provide reassurance and improve mental readiness. For healthcare professionals, insights from such analysis can inform better, data-driven decisions and enable more personalized care plans. This project was inspired by a desire to bring clarity to those questions, to turn numbers into insights, and most importantly, to use data to support patients on one of the most challenging journeys of their lives.
 
 ---
 
-Project Goal
+## Project Goal
+
 The main goal of this project is to analyze the relationship between patient age, surgery type, and their monthly BMI change after undergoing bariatric surgery. Using real-world clinical data, the project aims to:
 
-Identify trends and correlations between these factors.
+* Identify trends and correlations between these factors.
 
-Quantify how much of the BMI change can be explained by age and surgery type.
+* Quantify how much of the BMI change can be explained by age and surgery type.
 
-Build predictive models that estimate how much weight a patient might lose per month, depending on their characteristics.
+* Build predictive models that estimate how much weight a patient might lose per month, depending on their characteristics.
 
 By combining exploratory data analysis, statistical tests, and machine learning techniques, the project seeks to provide actionable insights that can help both patients and clinicians make more informed, confident decisions in the context of obesity treatment.
 
