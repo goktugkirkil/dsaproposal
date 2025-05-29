@@ -1,8 +1,5 @@
 # DSA210 Term Project – BMI Prediction Based on Age and Surgery Type
 
-## Author: Göktuğ Kırkıl – Sabancı University
-
----
 
 ## Project Title
 
@@ -40,6 +37,26 @@ By combining exploratory data analysis, statistical tests, and machine learning 
 
 ---
 
+## Files in This Repo
+
+* `analysis.ipynb`: EDA, ML, and statistical testing
+* `README.md`: This project summary
+* `data/ayaybmi.csv`: BMI dataset
+* `data/TAKİP 22.01.2025 SPSSE HAZIRLIK.csv`: Demographic and clinical dataset
+
+---
+## Hypothesis
+
+Null Hypothesis (H₀):
+There is no significant relationship between a patient's age or surgery type and the amount of monthly BMI loss following bariatric surgery.
+→ Any variation in BMI change is due to random chance or other unmeasured factors.
+
+Alternative Hypothesis (H₁):
+There is a significant relationship between a patient's age and/or surgery type and the amount of monthly BMI loss.
+→ Age and surgery type influence how much weight a patient loses post-operatively on a monthly basis.
+
+---
+
 ## Exploratory Data Analysis
 
 ### Univariate Analysis
@@ -64,7 +81,9 @@ A series of histograms and KDE plots were used to inspect distributions of numer
 
 A scatter plot was used to analyze the relationship between age and monthly BMI loss.
 
-* **Observation:** There's no strong linear relationship between age and BMI loss, but different surgery types showed slightly different patterns.
+* **Observation:** 
+There wasn't a clear linear trend between age and BMI loss, but when grouped by surgery type, slight differences emerged. Some surgeries seemed to result in more consistent BMI loss across age, while others had more variation. So while age alone doesn't predict much, it might interact subtly with the type of surgery.
+
 
 ![Age vs Monthly BMI Loss](Age_vs_BMI.png)
 
@@ -74,7 +93,12 @@ A scatter plot was used to analyze the relationship between age and monthly BMI 
 
 A correlation heatmap was generated for all numeric variables.
 
-* **Key Finding:** Strongest inverse correlation was between BMI\_2 and monthly\_BMI\_loss, indicating expected weight loss impact. Age had a weak correlation with BMI loss.
+* **Key Finding:** 
+
+The strongest relationship was a negative correlation between BMI_2 and monthly_BMI_loss, which makes sense: lower BMI at the end = more weight lost.
+
+Age showed only a weak correlation with BMI change, reaffirming earlier observations.
+This tells us that while surgery clearly affects BMI, age plays a more minor role in predicting outcomes.
 
 ![Correlation Matrix](Correlation_Matrix.png)
 
@@ -104,13 +128,22 @@ Below are scatter plots comparing actual BMI loss with predicted values for each
 
 ![Linear Regression Prediction](Linear_Regression%20.png)
 
+This simple model performed best overall with the highest R² (~0.0003) and lowest error rates. While still weak in predictive power, it's the most reliable option when using age alone. Its transparency makes it easy to understand.
+
 **Decision Tree**
 
 ![Decision Tree Prediction](Decision_Tree.png)
 
+The decision tree overfit the data and had poor generalization. The negative R² suggests it captured noise more than signal. With more features or data, it might improve, but for now, it’s not very useful on its own.
+
+
 **Random Forest**
 
 ![Random Forest Prediction](Random_Forest.png)
+
+Random Forest slightly outperformed the decision tree, but still showed a negative R², indicating weak predictive performance. It usually excels in complex data, but here, with only one feature - age - (since each surgery type is to be looked on their own), its strengths couldn't shine.
+
+
 
 ---
 
@@ -137,19 +170,14 @@ A one-way ANOVA test was conducted.
 
 ## Conclusion
 
-* ML models using only age as a predictor failed to provide reliable predictions.
-* There is no significant statistical difference in BMI loss across age groups.
-* This suggests that BMI change is influenced by more complex interactions or other variables not included in this analysis.
+Unfortunately, all three ML models performed poorly when using age as the only input variable. The R² scores were close to or below zero, indicating that the models couldn't capture meaningful patterns in the data. Even the best performer, Linear Regression, explained virtually none of the variance in monthly BMI loss.
 
----
+Statistical analysis supported this result. The ANOVA test comparing age groups showed no significant differences in BMI change across younger, middle-aged, and older patients (p-value > 0.05).
 
-## Files in This Repo
+What does this mean?
+Age, on its own, doesn't seem to explain why some patients lose more weight than others after surgery. This implies that other factors —perhaps metabolic data, lifestyle habits, or even psychological factors— play a more important role in BMI outcomes.
 
-* `analysis.ipynb`: EDA, ML, and statistical testing
-* `README.md`: This project summary
-* `data/ayaybmi.csv`: BMI dataset
-* `data/...csv`: Demographic and clinical dataset
-
+So while this analysis didn't produce a strong predictive model, it provided a valuable insight: single-variable predictions are not enough for understanding complex medical outcomes like weight loss. 
 ---
 
 ## Future Work
@@ -157,6 +185,8 @@ A one-way ANOVA test was conducted.
 * Include additional predictors such as initial BMI, clinical indicators, gender, and behavioral factors.
 * Apply feature engineering techniques to improve predictive power.
 * Explore interaction effects between age, surgery type, and other variables.
+
+After all that this code would be ready to estimate (or predict) the monthly BMI loss of each patient.
 
 
   
